@@ -14,7 +14,6 @@ public class Figure implements FigureActions {
         return "something went wrong, please check your figure";
     }
 
-    @Override
     public double getArea() {
         return 0;
     }
