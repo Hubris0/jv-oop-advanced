@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Figure {
+public class Figure implements FigureActions {
     protected final String figureName;
     protected final String color;
 
@@ -9,7 +9,8 @@ public class Figure {
         this.color = color;
     }
 
+    @Override
     public String draw() {
-        return "something went wrong";
+        return "something went wrong, please check your figure";
     }
 }
