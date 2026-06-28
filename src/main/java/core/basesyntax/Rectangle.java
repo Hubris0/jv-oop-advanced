@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-public class Rectangle extends Figure {
+import java.awt.*;
+
+public class Rectangle extends Figure implements FigureActions {
     private final int sideA;
     private final int sideB;
 
@@ -14,6 +16,7 @@ public class Rectangle extends Figure {
         super(name, color);
         this.sideA = sideA;
         this.sideB = sideB;
+        super.draw = draw();
     }
 
     @Override

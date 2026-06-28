@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-public class RightTriangle extends Figure {
+import java.awt.*;
+
+public class RightTriangle extends Figure implements FigureActions {
     private final int sideA;
     private final int sideB;
 
@@ -8,6 +10,7 @@ public class RightTriangle extends Figure {
         super("Right Triangle", color);
         this.sideA = sideA;
         this.sideB = sideB;
+        super.draw = draw();
     }
 
     @Override

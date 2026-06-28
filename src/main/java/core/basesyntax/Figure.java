@@ -1,20 +1,12 @@
 package core.basesyntax;
 
-public class Figure implements FigureActions {
+public class Figure {
     protected final String figureName;
     protected final String color;
+    protected String draw;
 
     protected Figure(String name, String color) {
         this.figureName = name;
         this.color = color;
-    }
-
-    @Override
-    public String draw() {
-        return "something went wrong, please check your figure";
-    }
-
-    public double getArea() {
-        return 0;
     }
 }

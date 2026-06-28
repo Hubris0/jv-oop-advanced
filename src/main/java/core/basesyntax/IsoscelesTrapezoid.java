@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class IsoscelesTrapezoid extends Figure {
+public class IsoscelesTrapezoid extends Figure implements FigureActions {
     private final int sideA;
     private final int sideB;
     private final int height;
@@ -10,6 +10,7 @@ public class IsoscelesTrapezoid extends Figure {
         this.sideA = sideA;
         this.sideB = sideB;
         this.height = height;
+        super.draw = draw();
     }
 
     @Override

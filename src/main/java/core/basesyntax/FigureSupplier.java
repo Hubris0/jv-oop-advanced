@@ -5,21 +5,22 @@ import java.util.Random;
 public class FigureSupplier {
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
-    private final int valueLimit = 10; // Maximum value for the sides and radius of the figures
-    private final int sideA = random.nextInt(valueLimit) + 1;
-    private final int sideB = random.nextInt(valueLimit) + 1;
-    private final int height = random.nextInt(valueLimit) + 1;
-    private final int radius = random.nextInt(valueLimit) + 1;
 
     public Figure getDefaultFigure() {
-        return new Circle(valueLimit,
+        final int defaultRadius = 10; // Default radius for the default figure (Circle)
+        return new Circle(defaultRadius,
                 colorSupplier.getDefaultColor());
     }
 
     public Figure getRandomFigure() {
+        final int valueLimit = 100; // Maximum value for the sides and radius of the figures
+        final int sideA = random.nextInt(valueLimit) + 1;
+        final int sideB = random.nextInt(valueLimit) + 1;
+        final int height = random.nextInt(valueLimit) + 1;
+        final int radius = random.nextInt(valueLimit) + 1;
         String color = colorSupplier.getRandomColor();
         final Figure[] figureNames = {new Square(sideA, color),
-                new Rectangle(sideA, sideA, color),
+                new Rectangle(sideA, sideB, color),
                 new RightTriangle(sideA, sideB, color),
                 new IsoscelesTrapezoid(sideA, sideB, height, color),
                 new Circle(radius, color)};

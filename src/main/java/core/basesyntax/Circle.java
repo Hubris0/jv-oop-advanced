@@ -1,11 +1,14 @@
 package core.basesyntax;
 
-public class Circle extends Figure {
+import java.awt.*;
+
+public class Circle extends Figure implements FigureActions {
     private final int radius;
 
     public Circle(int radius, String color) {
         super("Circle", color);
         this.radius = radius;
+        super.draw = draw();
     }
 
     @Override
