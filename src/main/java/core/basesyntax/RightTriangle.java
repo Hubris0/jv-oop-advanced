@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class RightTriangle extends Figure implements FigureActions {
+public class RightTriangle extends Figure {
     private final int sideA;
     private final int sideB;
 
