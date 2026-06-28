@@ -5,14 +5,14 @@ import java.util.Random;
 public class FigureSupplier {
     private final Random random = new Random();
     private final ColorSupplier colorSupplier = new ColorSupplier();
-    private final int VALUE_LIMIT = 10; // Maximum value for the sides and radius of the figures
-    private final int sideA = random.nextInt(VALUE_LIMIT) + 1;
-    private final int sideB = random.nextInt(VALUE_LIMIT) + 1;
-    private final int height = random.nextInt(VALUE_LIMIT) + 1;
-    private final int radius = random.nextInt(VALUE_LIMIT) + 1;
+    private final int valueLimit = 10; // Maximum value for the sides and radius of the figures
+    private final int sideA = random.nextInt(valueLimit) + 1;
+    private final int sideB = random.nextInt(valueLimit) + 1;
+    private final int height = random.nextInt(valueLimit) + 1;
+    private final int radius = random.nextInt(valueLimit) + 1;
 
     public Figure getDefaultFigure() {
-        return new Circle(VALUE_LIMIT,
+        return new Circle(valueLimit,
                 colorSupplier.getDefaultColor());
     }
 

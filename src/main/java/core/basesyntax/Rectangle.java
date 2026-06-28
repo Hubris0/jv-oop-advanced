@@ -22,6 +22,10 @@ public class Rectangle extends Figure {
 
     @Override
     public String draw() {
-        return "Figure: " + figureName + " area: " + getArea() + " sq. units, firstSide: " + sideA + " units, secondSide: " + sideB + " units, color: " + color;
+        return "Figure: " + figureName + " area: "
+                + getArea() + " sq. units, firstSide: "
+                + sideA + " units, secondSide: "
+                + sideB + " units, color: "
+                + color;
     }
 }
