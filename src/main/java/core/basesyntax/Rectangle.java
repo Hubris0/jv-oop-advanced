@@ -14,7 +14,6 @@ public class Rectangle extends Figure {
         super(name, color);
         this.sideA = sideA;
         this.sideB = sideB;
-        super.draw = draw();
     }
 
     @Override
@@ -23,11 +22,11 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public String draw() {
-        return "Figure: " + figureName + " area: "
+    public void draw() {
+        System.out.println("Figure: " + figureName + " area: "
                 + getArea() + " sq. units, firstSide: "
                 + sideA + " units, secondSide: "
                 + sideB + " units, color: "
-                + color;
+                + color);
     }
 }

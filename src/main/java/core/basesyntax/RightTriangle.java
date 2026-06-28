@@ -8,7 +8,6 @@ public class RightTriangle extends Figure {
         super("Right Triangle", color);
         this.sideA = sideA;
         this.sideB = sideB;
-        super.draw = draw();
     }
 
     @Override
@@ -17,11 +16,11 @@ public class RightTriangle extends Figure {
     }
 
     @Override
-    public String draw() {
-        return "Figure: " + figureName + " area: "
+    public void draw() {
+        System.out.println("Figure: " + figureName + " area: "
                 + getArea() + " sq. units, firstLeg: "
                 + sideA + " units, secondLeg: "
                 + sideB + " units, color: "
-                + color;
+                + color);
     }
 }

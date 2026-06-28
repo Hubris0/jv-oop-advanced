@@ -10,7 +10,6 @@ public class IsoscelesTrapezoid extends Figure {
         this.sideA = sideA;
         this.sideB = sideB;
         this.height = height;
-        super.draw = draw();
     }
 
     @Override
@@ -19,11 +18,11 @@ public class IsoscelesTrapezoid extends Figure {
     }
 
     @Override
-    public String draw() {
-        return "Figure: " + figureName + " area: "
+    public void draw() {
+        System.out.println("Figure: " + figureName + " area: "
                 + getArea() + " sq. units, firstSide: "
                 + sideA + " units, secondSide: "
                 + sideB + " units, color: "
-                + color;
+                + color);
     }
 }
