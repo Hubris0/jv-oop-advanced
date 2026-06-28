@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Figure {
+public abstract class Figure implements FigureActions {
     protected final String figureName;
     protected final String color;
     protected String draw;
