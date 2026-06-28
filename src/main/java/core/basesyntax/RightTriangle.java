@@ -10,6 +10,7 @@ public class RightTriangle extends Figure {
         this.sideB = sideB;
     }
 
+    @Override
     public double getArea() {
         return sideA * sideB / 2.0;
     }

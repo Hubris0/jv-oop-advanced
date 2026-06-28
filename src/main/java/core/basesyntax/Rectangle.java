@@ -16,6 +16,7 @@ public class Rectangle extends Figure {
         this.sideB = sideB;
     }
 
+    @Override
     public double getArea() {
         return sideA * sideB;
     }
