@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class Circle extends Figure implements FigureActions {
     private final int radius;
 

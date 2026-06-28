@@ -1,7 +1,5 @@
 package core.basesyntax;
 
-import java.awt.*;
-
 public class RightTriangle extends Figure implements FigureActions {
     private final int sideA;
     private final int sideB;
