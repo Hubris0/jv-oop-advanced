@@ -10,8 +10,12 @@ public class RightTriangle extends Figure {
         this.sideB = sideB;
     }
 
-    @Override
     public double getArea() {
         return sideA * sideB / 2.0;
+    }
+
+    @Override
+    public String draw() {
+        return "Figure: " + figureName + " area: " + getArea() + " sq. units, firstLeg: " + sideA + " units, secondLeg: " + sideB + " units, color: " + color;
     }
 }

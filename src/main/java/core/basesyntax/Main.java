@@ -8,10 +8,11 @@ public class Main {
         FigureSupplier figureSupplier = new FigureSupplier();
         for (int i = 0; i < numberOfFigures; i++) {
             if (i >= numberOfFigures / 2) {
-                isDefaultFigure = true;
+                figures[i] = figureSupplier.getDefaultFigure();
+            } else {
+                figures[i] = figureSupplier.getRandomFigure();
             }
-            figures[i] = figureSupplier.getRandomFigure(isDefaultFigure);
-            System.out.println(figures[i].toString());
+            System.out.println(figures[i].draw());
         }
     }
 }
