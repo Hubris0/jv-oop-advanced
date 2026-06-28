@@ -1,0 +1,15 @@
+package core.basesyntax;
+
+public class Circle extends Figure {
+    private final int radius;
+
+    public Circle(int radius, String color) {
+        super("Circle", color);
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * this.radius * this.radius;
+    }
+}
