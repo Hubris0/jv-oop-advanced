@@ -4,6 +4,11 @@ public abstract class Figure {
     private final String figureName;
     private final String color;
 
+    protected Figure(String name, String color) {
+        this.figureName = name;
+        this.color = color;
+    }
+
     public abstract double getArea();
 
     public String getFigureName() {
@@ -14,10 +19,7 @@ public abstract class Figure {
         return color;
     }
 
-    protected Figure(String name, String color) {
-        this.figureName = name;
-        this.color = color;
-    }
+
     @Override public String toString() {
         return String.format("Figure: %s, area: %.2f sq.units, color: %s",
                 figureName, getArea(), color);

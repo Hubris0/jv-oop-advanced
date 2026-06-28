@@ -9,12 +9,12 @@ public final class ColorSupplier {
     private ColorSupplier() {
     }
 
-    public static String getRandomColor(){
+    public static String getRandomColor() {
         int randomIndex = random.nextInt(colors.length);
         return colors[randomIndex].name();
     }
 
-    public static String getDefaultColor(){
+    public static String getDefaultColor() {
         return Colors.WHITE.name();
     }
 }
